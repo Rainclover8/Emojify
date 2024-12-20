@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_section {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #4a148c; /* Daha koyu mor ton */
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 85%;
+  max-width: 320px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #6a11cb;
+  border-radius: 24px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  width: 60%;
+  max-width: 200px;
+  padding: 12px;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc; /* Daha açık mavi-mor geçişi */
+}
+
+h2 {
+  color: #4a148c;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Toastify__toast-container {
+  width: 90%;
+  max-width: 300px;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .Toastify__toast {
+    font-size: 0.8rem;
+  }
+}
