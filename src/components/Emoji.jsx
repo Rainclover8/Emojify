@@ -102,7 +102,7 @@ export default function Emoji() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://www.instagram.com/[kullanıcı_adın]"
+                                    href="https://www.instagram.com/baranncicek19"
                                     target="_blank"
                                     aria-label="Instagram"
                                 >
