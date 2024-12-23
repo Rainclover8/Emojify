@@ -93,7 +93,7 @@ export default function QuestionManager() {
                 {questions.length > 0 ? (
                     questions.map((q) => (
                         <li key={q.id}>
-                            {q.emoji_sequence} - {q.correct_answer} (Sahibi: {q.name || "Belirtilmemiş"})
+                            {q.emoji_sequence} - {q.correct_answer} (Sahibi: {q.user_name || "Belirtilmemiş"})
                         </li>
                     ))
                 ) : (

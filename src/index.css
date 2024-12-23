@@ -75,6 +75,7 @@ button:hover {
   width: 100%;
   bottom: 0;
   left: 0;
+  padding: 20px 0;
 }
 
 .footer .container {
@@ -121,6 +122,26 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .main_section {
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  form input {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  form button {
+    width: 70%;
+    max-width: 180px;
+  }
+
   .footer .container {
     flex-direction: column;
     align-items: center;
@@ -129,5 +150,40 @@ button:hover {
 
   .footer-section {
     padding: 10px 0;
+  }
+
+  .footer-bottom {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet ve Mobil Uyumu İçin */
+@media (max-width: 480px) {
+  .main_section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  input, button {
+    width: 90%;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 8px 0;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
   }
 }
