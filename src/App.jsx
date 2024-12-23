@@ -1,16 +1,18 @@
-import Emoji from "./components/Emoji.jsx";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import EmojiGame from "./components/EmojiGame";
+import QuestionManager from "./components/QuestionManager";
 
-
-function App() {
-
-
+export default function App() {
   return (
-  <>
-    <h1>Guess The Song!</h1>
-
-    <Emoji/>
-  </>
-  )
+      <Router>
+        <nav>
+          <Link to="/">Emoji Oyunu</Link> | <Link to="/manage">Soruları Yönet</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<EmojiGame />} />
+          <Route path="/manage" element={<QuestionManager />} />
+        </Routes>
+      </Router>
+  );
 }
-
-export default App
