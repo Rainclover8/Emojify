@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { supabase } from "../client/supabaseClient";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -49,7 +49,7 @@ export default function EmojiGame() {
         <div>
             {questions.length > 0 ? (
                 <>
-                    <h2>{questions.length} Adet soru var, siz şu an {questionNumber + 1}</h2>
+                    <h2>{questions.length} Adet soru var, siz şu an {questionNumber + 1}. sorudasınız</h2>
                     <h1 style={{backgroundColor:"white", padding:12, borderRadius:20}}>{questions[questionNumber].emoji_sequence}</h1>
                     <h3 style={{backgroundColor:"darkgray", padding:6, borderRadius:20}}>Emoji Sahibi: {questions[questionNumber].user_name}</h3>
                     <form onSubmit={checkAns}>
