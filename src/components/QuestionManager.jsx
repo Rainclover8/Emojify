@@ -48,8 +48,9 @@ export default function QuestionManager() {
             console.error("Soru eklenirken hata oluştu:", error);
             toast.error("Soru eklenirken hata oluştu: " + error.message);
         } else if (!data || !Array.isArray(data)) {
-            console.error("Beklenmeyen veri formatı:", data);
-            toast.error("Soru eklenirken beklenmedik bir hata oluştu.");
+            setNewEmojiSequence("");
+            setNewCorrectAnswer("");
+            setNewName("");
 
         } else {
             console.log("Soru başarıyla eklendi:", data);
